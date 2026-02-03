@@ -2,6 +2,7 @@ import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ProductList from "./components/ProductList";
 import CartItem from "./components/CartItem";
 import AboutUs from "./components/AboutUs";
+import AboutPage from "./components/AboutPage";
 import "./App.css";
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           />
           <Route path="/plants" element={<ProductList />} />
           <Route path="/cart" element={<CartItem />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </div>
     </Router>

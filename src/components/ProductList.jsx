@@ -33,22 +33,18 @@ const ProductList = () => {
         <div key={category}>
           <h3>{category}</h3>
           <div className="plant-grid">
-            {plants.map(plant => {
-              const inCart = cart.some(item => item.id === plant.id);
-              return (
-                <div key={plant.id} className="plant-card">
-                  <img src={plant.img} alt={plant.name} />
-                  <h4>{plant.name}</h4>
-                  <p>${plant.price}</p>
-                  <button
-                    disabled={inCart}
-                    onClick={() => dispatch(addToCart(plant))}
-                  >
-                    {inCart ? "Added" : "Add to Cart"}
-                  </button>
-                </div>
-              );
-            })}
+            {plants.map(plant => (
+              <div key={plant.id} className="plant-card">
+                <img src={plant.img} alt={plant.name} />
+                <h4>{plant.name}</h4>
+                <p>${plant.price}</p>
+                <button
+                  onClick={() => dispatch(addToCart(plant))}
+                >
+                  Add to Cart
+                </button>
+              </div>
+            ))}
           </div>
         </div>
       ))}

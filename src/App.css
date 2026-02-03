@@ -119,3 +119,11 @@ body {
   justify-content: center;
   margin-top: 0.5rem;
 }
+
+.cart-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}

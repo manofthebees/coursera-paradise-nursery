@@ -15,7 +15,8 @@ const Header = () => {
       <div>
         <Link to="/">Home</Link> |{" "}
         <Link to="/plants">Plants</Link> |{" "}
-        <Link to="/cart">Cart ({totalItems})</Link>
+        <Link to="/cart">Cart ({totalItems})</Link> |{" "}
+        <Link to="/about">About</Link>
       </div>
     </nav>
   );
