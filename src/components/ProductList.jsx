@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "./CartSlice";
+import { addItem } from "./CartSlice";
 import Header from "./Header";
 
 const plants = [
@@ -39,7 +39,7 @@ const ProductList = () => {
                 <h4>{plant.name}</h4>
                 <p>${plant.price}</p>
                 <button
-                  onClick={() => dispatch(addToCart(plant))}
+                  onClick={() => dispatch(addItem(plant))}
                 >
                   Add to Cart
                 </button>
