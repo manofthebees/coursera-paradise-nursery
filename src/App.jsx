@@ -3,7 +3,7 @@ import { useState } from "react";
 import ProductList from "./components/ProductList";
 import CartItem from "./components/CartItem";
 import AboutUs from "./components/AboutUs";
-import AboutPage from "./components/AboutPage";
+import AboutPage from "./components/AboutUs";
 import "./App.css";
 
 const App = () => {
@@ -23,7 +23,6 @@ const App = () => {
                 ) : (
                   <div className="landing">
                     <h1>Welcome to Paradise Nursery</h1>
-                    <AboutUs />
                     <button onClick={() => setShowProducts(true)}>
                       Get Started
                     </button>
@@ -33,7 +32,7 @@ const App = () => {
             />
             <Route path="/plants" element={<ProductList />} />
             <Route path="/cart" element={<CartItem />} />
-            <Route path="/about" element={<AboutPage />} />
+            <Route path="/about" element={<AboutUs />} />
           </Routes>
         </div>
       </div>
