@@ -7,7 +7,11 @@ const Header = () => {
 
   return (
     <nav className="navbar">
-      <h2>🌿 Paradise Nursery</h2>
+      <h2>
+        <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          🌿 Paradise Nursery
+        </Link>
+      </h2>
       <div>
         <Link to="/">Home</Link> |{" "}
         <Link to="/plants">Plants</Link> |{" "}
